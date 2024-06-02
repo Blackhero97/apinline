@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Syne:wght@100..900&family=Outfit:wght@100..900&display=swap");
+@import url(https://fonts.googleapis.com/css?family=Outfit:100,200,300,regular,500,600,700,800,900);
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Outfit", sans-serif;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  box-shadow: var(--inner-shadow);
+}
+html,
+body,
+.root {
+  overflow-x: hidden;
+  min-height: 100vh;
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: "Tesla";
+  src: url("./font/TESLA.ttf");
+}
+.tesla {
+  font-family: "Tesla";
+  text-transform: uppercase;
+  font-size: 72px;
+  background: var(--primary-btn);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Syne";
+  font-weight: 500;
+}
+
+:root {
+  --fon-rangi-one: linear-gradient(
+    177deg,
+    rgba(255, 255, 255, 0.026) -45.5%,
+    rgba(59, 108, 236, 0.16) 47.54%
+  );
+  --section-padding: 80px 0;
+  --radial: radial-gradient(
+    271.97% 153.56% at 0% 2.78%,
+    rgb(242, 241, 255) 0%,
+    rgba(255, 255, 255, 0.198) 100%
+  );
+  --title-color: #060e29;
+  --text-color: #4c4c4d;
+  --primary-btn: linear-gradient(90deg, #3428e0 0%, #3b6cec 100%);
+  --primary-btn-hover: #060e29;
+  --primary-btn-active: linear-gradient(
+    86deg,
+    #e151ff -65.93%,
+    #3b6cec 119.91%
+  );
+  --card-bg: radial-gradient(
+    277.32% 144.05% at 2.46% 13.21%,
+    rgb(255, 255, 255) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  --inner-shadow: inset #dce2ff 0px 0px 60px -12px;
+  --white-bg: #fff;
+  --icon-bg: linear-gradient(
+    122deg,
+    rgba(255, 255, 255, 0.3) 1.48%,
+    rgba(21, 110, 198, 0.22) 35.42%
+  );
+  --white-text: #fff;
+  --dark-text: #000;
+}
+h2 {
+  font-size: 46px;
+  color: var(--title-color);
+}
+.primary-btn {
+  border-radius: 10px;
+  background: var(--primary-btn);
+  color: var(--white-text);
+  text-align: center;
+  font-family: Outfit;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+.primary-btn:hover {
+  background: var(--primary-btn-active);
+}
+.primary-btn:active {
+  background: var(--primary-btn-hover);
+}
+
+.light-btn {
+  border-radius: 10px;
+  background: var(--white-bg);
+  color: var(--dark-text);
+  text-align: center;
+  font-family: Outfit;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+.light-btn:hover {
+  background: var(--primary-btn-hover);
+  color: var(--white-text);
+}
+p {
+  font-size: 16px;
+  color: var(--text-color);
+}
+button {
+  border-radius: 10px;
+  box-shadow: 4px 4px 17.4px 0px rgba(255, 255, 255, 0.28) inset;
+  padding: 14px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+.main-box {
+  border-radius: 33px;
+  background: var(--radial);
+  backdrop-filter: blur(20px);
+  /* border: 4px solid #fff; */
+  padding: 50px;
+}
+main {
+  background-image: url("./imgs/gradient.svg");
+  background-repeat: none;
+}
+body {
+  border-radius: 20px;
+  background: var(--radial);
+  padding: 40px 15px;
+}
