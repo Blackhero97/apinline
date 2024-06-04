@@ -1,0 +1,109 @@
+@import url("../../App.css");
+.asked {
+  padding: var(--section-padding);
+}
+.asked-box {
+}
+.asked-box-top {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.asked-box-bottom-wrapper {
+  display: flex;
+  align-items: start;
+  gap: 20px;
+}
+.asked-box-bottom-quest-box {
+  max-width: 385px;
+  width: 100%;
+}
+.asked-box-bottom-quest-box .asked-card {
+  text-align: center;
+}
+.asked-box-bottom-quest-box .asked-card h3 {
+  text-align: center;
+}
+.asked-box-bottom {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 20px;
+}
+.asked-card,
+.asked-accordion {
+  padding: 30px;
+  background: var(--card-bg);
+  box-shadow: var(--inner-shadow);
+  border: 2px solid var(--white-border);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.asked-accordion {
+  max-height: 110px;
+  overflow: hidden;
+  transition: 0.3s ease-in-out;
+}
+body.dark .asked-accordion {
+  transition: none;
+}
+.asked-accordion.active {
+  max-height: 350px;
+  /* transform: rotate(2deg); */
+}
+
+.asked-card:hover,
+.asked-accordion:hover {
+  box-shadow: none;
+  transform: translateY(-10px);
+}
+
+.asked-accordion-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.asked-card-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.open-box {
+  border-radius: 100px;
+  border: 1px solid var(--fon-rangi, #fcfaff);
+  background: var(--card-bg);
+  width: 52px;
+  height: 52px;
+  color: var(--title-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+.asked-accordion-head {
+  /* border-bottom: 1px solid var(--white-border); */
+  padding: 0 0 15px 0;
+}
+.asked-card h3 {
+  color: var(--title-color);
+  text-align: left;
+  font-family: Syne;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 45px */
+}
+.asked-accordion h4 {
+  color: var(--title-color);
+  font-family: Outfit;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+}
+.asked-box-top p {
+  max-width: 1000px;
+  margin: 20px auto;
+}

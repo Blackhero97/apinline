@@ -1,32 +1,38 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
 import "./navbar.css";
-function Navbar() {
+function Navbar({ change, isDark }) {
   return (
     <>
-      <header className="header">
-        <img src="imgs/logo.svg" alt="" className="logo" />{" "}
-        <nav>
-          <ul>
-            <Link to={"/"} className={""}>
-              Home
-            </Link>
-            <Link to={"/about"}>About Us</Link>
-            <Link to={"/service"}>Services</Link>
-            <Link to={"/projects"}>Portfolio</Link>
-            <Link to={"/blogs"}>Blogs</Link>
-            <Link to={"/contact"}>Contact Us</Link>{" "}
-            <a href="tel:+5138375128">
-              <button type="thrid" className="primary-btn">
-                +1 513 837-5128
+      <div className="header-box">
+        <header className="header">
+          <img src="imgs/logo.svg" alt="" className="logo" />{" "}
+          <nav>
+            <ul>
+              <NavLink to={"/"} className={""}>
+                Home
+              </NavLink>
+              <NavLink to={"/about"}>About Us</NavLink>
+              <NavLink to={"/service"}>Services</NavLink>
+              <NavLink to={"/portfolio"}>Portfolio</NavLink>
+              <NavLink to={"/blogs"}>Blogs</NavLink>
+              <NavLink to={"/contact"}>Contact Us</NavLink>{" "}
+              <a href="tel:+5138375128">
+                <button type="thrid" className="primary-btn">
+                  +1 513 837-5128
+                </button>
+              </a>{" "}
+              <button onClick={change} className="mode-btn primary-btn">
+                {isDark ? (
+                  <i class="bx bxs-sun"></i>
+                ) : (
+                  <i class="bx bxs-moon"></i>
+                )}
               </button>
-            </a>{" "}
-            <button className="mode-btn primary-btn">
-              <i class="bx bxs-moon"></i>
-            </button>
-          </ul>
-        </nav>
-      </header>
+            </ul>
+          </nav>
+        </header>
+      </div>
     </>
   );
 }

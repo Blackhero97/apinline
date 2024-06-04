@@ -9,10 +9,9 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 // import required modules
-import { Pagination, Navigation } from "swiper/modules";
+import { Pagination, Navigation, Autoplay } from "swiper/modules";
 import Service from "../service/Service";
 import Projects from "../projects/Projects";
-import Testimonials from "../../components/testimonials/Testimonials";
 function Home() {
   return (
     <>
@@ -100,11 +99,15 @@ function Home() {
           slidesPerView={5}
           spaceBetween={30}
           loop={true}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
           pagination={{
             clickable: false,
           }}
           navigation={false}
-          modules={[Pagination, Navigation]}
+          modules={[Pagination, Autoplay, Navigation]}
           className="mySwiper"
         >
           <SwiperSlide>
@@ -146,7 +149,6 @@ function Home() {
       </div>
       <Service />
       <Projects />
-      <Testimonials />
     </>
   );
 }

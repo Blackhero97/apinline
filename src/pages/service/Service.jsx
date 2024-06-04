@@ -1,5 +1,7 @@
 import React from "react";
 import "./services.css";
+import { CheckCircleOutlined, RightCircleOutlined } from "@ant-design/icons";
+
 function Service() {
   return (
     <>
@@ -29,7 +31,10 @@ function Service() {
               </p>
               <div className="services-card-box">
                 <h4>Starts at Price: $1,500</h4>
-                <button className="primary-btn">Book a Call</button>
+                <button className="primary-btn">
+                  Book a Call
+                  <RightCircleOutlined />
+                </button>
               </div>
             </div>
             <div className="services-card">
@@ -46,7 +51,10 @@ function Service() {
               </p>
               <div className="services-card-box">
                 <h4>Starts at Price: $1,500</h4>
-                <button className="primary-btn">Book a Call</button>
+                <button className="primary-btn">
+                  Book a Call
+                  <RightCircleOutlined />
+                </button>
               </div>
             </div>
             <div className="services-card">
@@ -63,7 +71,10 @@ function Service() {
               </p>
               <div className="services-card-box">
                 <h4>Starts at Price: $1,500</h4>
-                <button className="primary-btn">Book a Call</button>
+                <button className="primary-btn">
+                  Book a Call
+                  <RightCircleOutlined />
+                </button>
               </div>
             </div>
             <div className="services-card">
@@ -80,7 +91,10 @@ function Service() {
               </p>
               <div className="services-card-box">
                 <h4>Starts at Price: $1,500</h4>
-                <button className="primary-btn">Book a Call</button>
+                <button className="primary-btn">
+                  Book a Call
+                  <RightCircleOutlined />
+                </button>
               </div>
             </div>
           </div>

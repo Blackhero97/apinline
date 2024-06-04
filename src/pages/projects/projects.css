@@ -17,7 +17,7 @@
   padding: 30px;
   background: var(--card-bg);
   box-shadow: var(--inner-shadow);
-  border: 2px solid var(--white-bg);
+  border: 2px solid var(--white-border);
   border-radius: 20px;
   display: flex;
   flex-direction: column;
@@ -58,11 +58,22 @@
   line-height: 150%; /* 45px */
 }
 .projects-card h4 {
-  color: var(--text-color);
+  background: var(--title-color);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-family: Outfit;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
+}
+.projects-card span {
+  color: var(--title-color);
+  font-family: Outfit;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 150%; /* 27px */
 }
 .projects-box-top p {
   max-width: 600px;

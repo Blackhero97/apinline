@@ -1,26 +1,43 @@
+@import url("../../App.css");
 .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+.header-box {
+  position: sticky;
+  width: 100%;
+  backdrop-filter: blur(60px);
+  z-index: 999999;
+  top: 0;
+}
+a.active {
+  background: var(--primary-btn);
+  padding: 10px 15px;
+  border-radius: 5px;
+  color: var(--white-text);
 }
 nav ul {
   display: flex;
   align-items: center;
-  gap: 30px;
 }
 @import url("../../App.css");
 
-a {
+header a {
   color: var(--text-color);
   text-align: center;
   font-family: Outfit;
+  padding: 10px 15px;
   font-size: 16px;
   font-style: normal;
   font-weight: normal;
 }
 
 .mode-btn {
-  border-radius: 50%;
+  border-radius: 50% !important;
   width: 50px;
   height: 50px;
   font-size: 30px;
