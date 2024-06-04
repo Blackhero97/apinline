@@ -19,7 +19,7 @@ function Home() {
         <div className="home-box ">
           <div className="home-text-box">
             <h1>
-              Hasanboy Your Digital Presence with{" "}
+              Elevate Your Digital Presence with{" "}
               <span className="tesla">Apinline</span>
             </h1>
             <p>
