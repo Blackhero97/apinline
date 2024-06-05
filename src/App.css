@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Syne:wght@100..900&family=Outfit:wght@100..900&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Syne:wght@100..900&family=Outfit:wght@100..900&display=swap"); */
 @import url(https://fonts.googleapis.com/css?family=Outfit:100,200,300,regular,500,600,700,800,900);
 * {
   padding: 0;
@@ -20,7 +20,10 @@ body,
   scroll-behavior: smooth;
   /* transition: 0.3s ease-in-out; */
 }
-
+@font-face {
+  font-family: "Syne-Bold";
+  src: url("./font/Syne-Bold.ttf");
+}
 @font-face {
   font-family: "Tesla";
   src: url("./font/TESLA.ttf");
@@ -40,7 +43,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Syne", "Outfit", sans-serif;
+  font-family: "Syne-Bold", sans-serif;
   font-weight: 600;
 }
 
