@@ -154,3 +154,12 @@
   -webkit-text-fill-color: transparent;
   font-size: 45px;
 }
+.form-btn-box {
+  max-width: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.form-btn-box button {
+  gap: 10px;
+}
