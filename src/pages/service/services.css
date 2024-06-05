@@ -67,7 +67,6 @@
 .services-card h3 {
   color: var(--title-color);
   text-align: center;
-  font-family: Syne;
   font-size: 30px;
   font-style: normal;
   font-weight: 500;
@@ -149,7 +148,6 @@
 }
 .category-box-bottom h3 {
   color: var(--title-color);
-  font-family: Syne;
   font-size: 28px;
   font-style: normal;
   font-weight: 600;
