@@ -17,10 +17,8 @@
 html,
 body,
 .root {
-  /* overflow-x: hidden;
-  min-height: 100vh; */
-  /* scroll-behavior: smooth; */
-  /* transition: 0.3s ease-in-out;   */
+  scroll-behavior: smooth;
+  /* transition: 0.3s ease-in-out; */
 }
 
 @font-face {
@@ -42,7 +40,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Syne";
+  font-family: "Syne", "Outfit", sans-serif;
   font-weight: 600;
 }
 
