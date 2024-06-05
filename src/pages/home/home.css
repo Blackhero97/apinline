@@ -80,8 +80,8 @@ body.dark .container-animation .card {
   margin-bottom: 30px;
 }
 .content-btn-box button {
-  background: var(--white-btn);
-  color: var(--white-btn-text);
+  background: var(--white-border);
+  color: var(--title-color);
   font-size: 10px;
   padding: 3px 6px;
   border-radius: 5px;
