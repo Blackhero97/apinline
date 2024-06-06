@@ -355,7 +355,7 @@ body.dark .container {
   .home-text-box {
     text-align: center;
     backdrop-filter: blur(50px);
-    padding: 30px;
+    padding: 20px;
     box-shadow: var(--inner-shadow);
     border-radius: 20px;
   }
@@ -500,7 +500,7 @@ body.dark .container {
   }
 
   .main-box {
-    padding: 30px 10px;
+    padding: 20px 10px;
   }
   .header-box {
     padding: 0px 10px;
@@ -582,8 +582,8 @@ body.dark .container {
   }
   .primary-btn,
   .light-btn {
-    font-size: 12px;
-    padding: 10px 14px;
+    font-size: 14px;
+    padding: 12px 14px;
   }
   .category-info-box-bottom-cards {
     margin-top: 10px;
