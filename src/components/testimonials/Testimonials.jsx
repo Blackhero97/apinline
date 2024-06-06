@@ -26,8 +26,28 @@ function Testimonials() {
           <div className="testimonials-box-bottom">
             <Swiper
               slidesPerView={2.75}
-              spaceBetween={30}
+              spaceBetween={15}
               loop={true}
+              breakpoints={{
+                1200: {
+                  slidesPerView: 2.75,
+                },
+                992: {
+                  slidesPerView: 2,
+                },
+                768: {
+                  slidesPerView: 2,
+                },
+                576: {
+                  slidesPerView: 2,
+                },
+                475: {
+                  slidesPerView: 2,
+                },
+                320: {
+                  slidesPerView: 1,
+                },
+              }}
               autoplay={{
                 delay: 2500,
                 disableOnInteraction: false,

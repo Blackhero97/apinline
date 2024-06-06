@@ -19,7 +19,11 @@ function Service() {
           <div className="services-box-bottom">
             <div className="services-card">
               <div className="services-card-img-box">
-                <img src="./imgs/services-img.png" alt="" />
+                <img
+                  src="./imgs/services-img.png"
+                  alt="service-img"
+                  loading="lazy"
+                />
               </div>
               <h3>Web Design</h3>
               <p>
@@ -39,7 +43,11 @@ function Service() {
             </div>
             <div className="services-card">
               <div className="services-card-img-box">
-                <img src="./imgs/services-img.png" alt="" />
+                <img
+                  src="./imgs/services-img.png"
+                  alt="service-img"
+                  loading="lazy"
+                />
               </div>
               <h3>Web Design</h3>
               <p>
@@ -59,7 +67,11 @@ function Service() {
             </div>
             <div className="services-card">
               <div className="services-card-img-box">
-                <img src="./imgs/services-img.png" alt="" />
+                <img
+                  src="./imgs/services-img.png"
+                  alt="service-img"
+                  loading="lazy"
+                />
               </div>
               <h3>Web Design</h3>
               <p>
@@ -79,7 +91,11 @@ function Service() {
             </div>
             <div className="services-card">
               <div className="services-card-img-box">
-                <img src="./imgs/services-img.png" alt="" />
+                <img
+                  src="./imgs/services-img.png"
+                  alt="service-img"
+                  loading="lazy"
+                />
               </div>
               <h3>Web Design</h3>
               <p>

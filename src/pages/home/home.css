@@ -16,13 +16,14 @@ h1 {
   background-position-y: top;
   background-size: 60%;
   background-repeat: no-repeat;
+  height: 100%;
 }
 body.dark .home {
   background-image: none;
 }
 .home-box {
   padding: var(--section-padding);
-  height: 85vh;
+  height: fit-content;
   background-image: url("../../assets/hand.png");
   background-repeat: no-repeat;
   background-position-x: right;
@@ -31,7 +32,17 @@ body.dark .home {
   position: relative;
   display: flex;
   align-items: center;
+  /* flex-wrap: wrap; */
   z-index: 2;
+}
+.home-img-box {
+  max-width: 600px;
+  position: relative;
+  min-height: 400px;
+  width: 100%;
+}
+.home-text-box {
+  height: fit-content;
 }
 .home-btn-box {
   display: flex;
@@ -224,6 +235,12 @@ body.dark .container-animation .card {
   margin: 50px 0;
   box-shadow: var(--inner-shadow);
   border: 2px solid var(--white-border);
+}
+.our-number-boxes {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
 }
 .our-numbers h2 {
   max-width: 430px;

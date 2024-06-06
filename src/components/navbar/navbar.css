@@ -13,6 +13,7 @@
   backdrop-filter: blur(60px);
   z-index: 999999;
   top: 0;
+  padding: 0 15px;
 }
 a.active {
   background: var(--primary-btn);

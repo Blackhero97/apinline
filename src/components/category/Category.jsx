@@ -38,7 +38,7 @@ function Category() {
         </div>
         <div className="category-box-bottom">
           <div className="category-link">
-            <button className="primary-btn">
+            <button className="light-btn">
               <CheckCircleOutlined />
               Web Design
             </button>
@@ -57,17 +57,19 @@ function Category() {
           </div>
           <div className="category-info-box">
             <div className="category-info-box-top">
-              <h3>Web Design</h3>
-              <p>
-                Web Design is the art and science of creating visually appealing
-                and user-friendly websites that reflect your brand identity and
-                resonate with your target audience. At Apinline, our web design
-                process involves a careful blend of creativity, user experience
-                (UX) design, and cutting-edge technologies. We take the time to
-                understand your business goals, target market, and unique
-                selling points to create a website that not only looks great but
-                also drives results.
-              </p>
+              <div className="top-wrap">
+                <h3>Web Design</h3>
+                <p>
+                  Web Design is the art and science of creating visually
+                  appealing and user-friendly websites that reflect your brand
+                  identity and resonate with your target audience. At Apinline,
+                  our web design process involves a careful blend of creativity,
+                  user experience (UX) design, and cutting-edge technologies. We
+                  take the time to understand your business goals, target
+                  market, and unique selling points to create a website that not
+                  only looks great but also drives results.
+                </p>
+              </div>
               <div className="category-info-wrapper">
                 <div className="category-info-box-bottom">
                   <h3>Key Features</h3>

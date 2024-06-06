@@ -99,6 +99,23 @@ function Home() {
           slidesPerView={5}
           spaceBetween={30}
           loop={true}
+          breakpoints={{
+            1200: {
+              slidesPerView: 5,
+            },
+            992: {
+              slidesPerView: 4,
+            },
+            768: {
+              slidesPerView: 3,
+            },
+            576: {
+              slidesPerView: 2,
+            },
+            320: {
+              slidesPerView: 2,
+            },
+          }}
           autoplay={{
             delay: 2500,
             disableOnInteraction: false,
@@ -134,17 +151,19 @@ function Home() {
         <div className="our-number-box">
           <h2>Our numbers tell more about us</h2>
         </div>
-        <div className="our-number-box">
-          <h3>6+</h3>
-          <span>Years in business</span>
-        </div>
-        <div className="our-number-box">
-          <h3>10+</h3>
-          <span>Successful projects</span>
-        </div>
-        <div className="our-number-box">
-          <h3>120+</h3>
-          <span>Opinions expressed by our customers</span>
+        <div className="our-number-boxes">
+          <div className="our-number-box">
+            <h3>6+</h3>
+            <span>Years in business</span>
+          </div>
+          <div className="our-number-box">
+            <h3>10+</h3>
+            <span>Successful projects</span>
+          </div>
+          <div className="our-number-box">
+            <h3>120+</h3>
+            <span>Opinions expressed by our customers</span>
+          </div>
         </div>
       </div>
       <Service />

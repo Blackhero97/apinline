@@ -19,7 +19,7 @@
 }
 .services-box-bottom {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(430px, 1fr));
   gap: 20px;
 }
 .services-card {
@@ -143,7 +143,7 @@
 }
 .category-info-box-bottom-cards {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   margin-top: 50px;
 }
 .category-box-bottom h3 {

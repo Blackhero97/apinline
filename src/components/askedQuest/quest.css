@@ -64,6 +64,7 @@ body.dark .asked-accordion {
 .asked-accordion-head {
   display: flex;
   align-items: center;
+  gap: 10px;
   justify-content: space-between;
 }
 .asked-card-box {

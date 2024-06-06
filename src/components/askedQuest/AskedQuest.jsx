@@ -62,10 +62,7 @@ function AskedQuest() {
                 }
               >
                 <div className="asked-accordion-head">
-                  <h4>
-                    How long does it typically take to complete a web design
-                    project?
-                  </h4>
+                  <h4>How long does complete a web design project?</h4>
                   <div className="open-box">
                     <i class="bx bx-plus"></i>
                   </div>

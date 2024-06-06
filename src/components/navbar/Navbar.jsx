@@ -1,14 +1,27 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import "./navbar.css";
-function Navbar({ change, isDark }) {
+function Navbar() {
+  const [isDark, setIsDark] = useState(false);
+  const [open, setOpen] = useState(false);
+  const change = () => {
+    setIsDark(!isDark);
+    console.log(isDark);
+  };
+  useEffect(() => {
+    if (isDark) {
+      document.body.classList.add("dark");
+    } else {
+      document.body.classList.remove("dark");
+    }
+  }, [isDark]);
   return (
     <>
       <div className="header-box">
         <header className="header">
           <img src="imgs/logo.svg" alt="" className="logo" />{" "}
-          <nav>
-            <ul>
+          <nav className={open ? "open-nav" : ""}>
+            <ul onClick={() => setOpen(!open)}>
               <NavLink to={"/"} className={""}>
                 Home
               </NavLink>
@@ -29,8 +42,14 @@ function Navbar({ change, isDark }) {
                   <i class="bx bxs-moon"></i>
                 )}
               </button>
+              <div onClick={() => setOpen(!open)} className="close">
+                <i class="bx bx-x-circle"></i>
+              </div>
             </ul>
           </nav>
+          <div onClick={() => setOpen(!open)} className="menu">
+            <i class="bx bx-menu-alt-left"></i>
+          </div>
         </header>
       </div>
     </>
