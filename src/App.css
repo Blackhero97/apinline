@@ -531,6 +531,10 @@ body.dark .container {
   .about-box-bottom {
     padding: 0 0 20px 0;
   }
+  .home {
+    justify-content: start;
+    align-items: start;
+  }
   .number-box {
     display: none;
   }
