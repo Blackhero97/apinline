@@ -4,7 +4,7 @@ import "./portfolio.css";
 function Portfolio() {
   return (
     <>
-      <div className="services-info">
+      <div className="services-info page-padding">
         <div className="services-info-left">
           <h2>Empowering Your Digital Vision</h2>
           <p>
@@ -36,7 +36,7 @@ function Portfolio() {
             </p>
           </div>
           <div className="portfolio-box-bottom">
-            <div className="portfolio-card">
+            <div className="portfolio-card card-padding">
               <div className="portfolio-card-img-box">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -60,7 +60,7 @@ function Portfolio() {
                 objectives and target audience.
               </p>
             </div>
-            <div className="portfolio-card">
+            <div className="portfolio-card card-padding">
               <div className="portfolio-card-img-box">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -84,7 +84,7 @@ function Portfolio() {
                 with our clients' brand identities.
               </p>
             </div>
-            <div className="portfolio-card">
+            <div className="portfolio-card card-padding">
               <div className="portfolio-card-img-box">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -117,7 +117,7 @@ function Portfolio() {
                 prioritizing seamless user experiences and intuitive interfaces.
               </p>
             </div>
-            <div className="portfolio-card">
+            <div className="portfolio-card card-padding">
               <div className="portfolio-card-img-box">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -152,7 +152,7 @@ function Portfolio() {
                 to deliver high-performance and future-proof solutions.
               </p>
             </div>{" "}
-            <div className="portfolio-card">
+            <div className="portfolio-card card-padding">
               <div className="portfolio-card-img-box">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -190,7 +190,7 @@ function Portfolio() {
           </div>
         </div>
       </div>
-      <div className="portfolio showcase">
+      <div className="portfolio showcase page-padding">
         <div className="portfolio-box">
           <div className="portfolio-box-top">
             <h2>Projects Showcase</h2>
@@ -233,7 +233,7 @@ function Portfolio() {
             </div>
           </div>
           <div className="portfolio-box-bottom">
-            <div className="portfolio-card">
+            <div className="portfolio-card card-padding">
               <div className="portfolio-card-info-box">
                 <div className="btn-box">
                   <button className="light-btn">Agancy</button>
@@ -264,7 +264,7 @@ function Portfolio() {
                 <img src="./imgs/project.svg" alt="" />
               </div>
             </div>
-            <div className="portfolio-card">
+            <div className="portfolio-card card-padding">
               <div className="portfolio-card-info-box">
                 <div className="btn-box">
                   <button className="light-btn">Agancy</button>
@@ -295,7 +295,7 @@ function Portfolio() {
                 <img src="./imgs/project.svg" alt="" />
               </div>
             </div>
-            <div className="portfolio-card">
+            <div className="portfolio-card card-padding">
               <div className="portfolio-card-info-box">
                 <div className="btn-box">
                   <button className="light-btn">Agancy</button>
@@ -326,7 +326,7 @@ function Portfolio() {
                 <img src="./imgs/project.svg" alt="" />
               </div>
             </div>
-            <div className="portfolio-card">
+            <div className="portfolio-card card-padding">
               <div className="portfolio-card-info-box">
                 <div className="btn-box">
                   <button className="light-btn">Agancy</button>
@@ -357,7 +357,7 @@ function Portfolio() {
                 <img src="./imgs/project.svg" alt="" />
               </div>
             </div>
-            <div className="portfolio-card">
+            <div className="portfolio-card card-padding">
               <div className="portfolio-card-info-box">
                 <div className="btn-box">
                   <button className="light-btn">Agancy</button>
@@ -388,7 +388,7 @@ function Portfolio() {
                 <img src="./imgs/project.svg" alt="" />
               </div>
             </div>
-            <div className="portfolio-card">
+            <div className="portfolio-card card-padding">
               <div className="portfolio-card-info-box">
                 <div className="btn-box">
                   <button className="light-btn">Agancy</button>

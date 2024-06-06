@@ -3,7 +3,7 @@ import "./about.css";
 function About() {
   return (
     <>
-      <div className="about">
+      <div className="about page-padding">
         <div className="about-box">
           <div className="about-box-top">
             <h2>Apinline - a reliablepartner for your digital project</h2>
@@ -20,7 +20,7 @@ function About() {
               <div className="line"></div>
             </div>
             <div className="about-box-bottom">
-              <div className="about-card">
+              <div className="about-card card-padding">
                 <div className="about-card-img-box">
                   <i class="bx bxs-star"></i>
                 </div>
@@ -38,7 +38,7 @@ function About() {
                   </p>
                 </div>
               </div>
-              <div className="about-card">
+              <div className="about-card card-padding">
                 <div className="about-card-img-box">
                   <i class="bx bxs-star"></i>
                 </div>
@@ -56,7 +56,7 @@ function About() {
                   </p>
                 </div>
               </div>
-              <div className="about-card">
+              <div className="about-card card-padding">
                 <div className="about-card-img-box">
                   <i class="bx bxs-star"></i>
                 </div>
@@ -74,7 +74,7 @@ function About() {
                   </p>
                 </div>
               </div>
-              <div className="about-card">
+              <div className="about-card card-padding">
                 <div className="about-card-img-box">
                   <i class="bx bxs-star"></i>
                 </div>
@@ -95,7 +95,7 @@ function About() {
             </div>
           </div>
           <div className="team">
-            <div className="team-box-top">
+            <div className="team-box-top page-padding">
               <h2>Our Team Members</h2>
               <p>
                 Partnering with Apinline offers a multitude of advantages.
@@ -105,7 +105,7 @@ function About() {
               </p>
             </div>
             <div className="team-cards">
-              <div className="team-card">
+              <div className="team-card card-padding">
                 <div className="team-card-img-box">
                   <img src="./imgs/team.png" alt="" />
                 </div>
@@ -126,7 +126,7 @@ function About() {
                   </div>
                 </div>
               </div>
-              <div className="team-card">
+              <div className="team-card card-padding">
                 <div className="team-card-img-box">
                   <img src="./imgs/team.png" alt="" />
                 </div>
@@ -147,7 +147,7 @@ function About() {
                   </div>
                 </div>
               </div>
-              <div className="team-card">
+              <div className="team-card card-padding">
                 <div className="team-card-img-box">
                   <img src="./imgs/team.png" alt="" />
                 </div>
@@ -168,7 +168,7 @@ function About() {
                   </div>
                 </div>
               </div>
-              <div className="team-card">
+              <div className="team-card card-padding">
                 <div className="team-card-img-box">
                   <img src="./imgs/team.png" alt="" />
                 </div>

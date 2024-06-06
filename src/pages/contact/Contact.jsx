@@ -4,9 +4,9 @@ import "./contact.css";
 function Contact() {
   return (
     <>
-      <div className="contact">
+      <div className="contact page-padding">
         <div className="contact-box">
-          <div className="contect-box-info">
+          <div className="contect-box-info card-padding">
             <h2>Connect with Us Today!</h2>
             <p>
               At Apinline, we value your inquiries, feedback, and
@@ -31,7 +31,7 @@ function Contact() {
               </ul>
             </div>
           </div>
-          <div className="contect-box-form">
+          <div className="contect-box-form card-padding">
             <form action="">
               <div className="input-boxes">
                 <div className="input-box">
@@ -90,8 +90,8 @@ function Contact() {
             </form>
           </div>
         </div>
-        <div className="contact-info-location">
-          <div className="contact-info-card">
+        <div className="contact-info-location ">
+          <div className="contact-info-card card-padding">
             <div className="contact-info-card-left">
               <span>You can email us here</span>
               <h4>apinline@gmail.com</h4>
@@ -100,7 +100,7 @@ function Contact() {
               <i class="bx bxs-chevron-right-circle"></i>
             </div>
           </div>
-          <div className="contact-info-card">
+          <div className="contact-info-card card-padding">
             <div className="contact-info-card-left">
               <span>Give us a call on</span>
               <h4>+998(88)-371-52-71</h4>
@@ -109,7 +109,7 @@ function Contact() {
               <i class="bx bxs-chevron-right-circle"></i>
             </div>
           </div>
-          <div className="contact-info-card">
+          <div className="contact-info-card card-padding">
             <div className="contact-info-card-left">
               <span>Office Hours</span>
               <h4>9:00 am - 6:00 pm</h4>

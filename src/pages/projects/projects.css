@@ -1,7 +1,3 @@
-@import url("../../App.css");
-.projects {
-  padding: var(--section-padding);
-}
 .projects-box {
 }
 .projects-box-top {
@@ -14,7 +10,6 @@
   gap: 20px;
 }
 .projects-card {
-  padding: 30px;
   background: var(--card-bg);
   box-shadow: var(--inner-shadow);
   border: 2px solid var(--white-border);

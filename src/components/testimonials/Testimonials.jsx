@@ -13,7 +13,7 @@ import "./testimonials.css";
 function Testimonials() {
   return (
     <div>
-      <div className="testimonials">
+      <div className="testimonials page-padding">
         <div className="testimonials-box">
           <div className="testimonials-box-top">
             <h2>Our Testimonials</h2>
@@ -40,11 +40,14 @@ function Testimonials() {
                 },
                 576: {
                   slidesPerView: 2,
+                  spaceBetween: 10,
                 },
                 475: {
+                  spaceBetween: 10,
                   slidesPerView: 2,
                 },
                 320: {
+                  spaceBetween: 10,
                   slidesPerView: 1,
                 },
               }}
@@ -61,7 +64,7 @@ function Testimonials() {
             >
               <SwiperSlide>
                 <div className="testimonials-card">
-                  <div className="testimonials-card-info">
+                  <div className="testimonials-card-info card-padding">
                     <div className="icon-box">
                       <i class="bx bxl-twitter"></i>
                     </div>
@@ -85,7 +88,7 @@ function Testimonials() {
               </SwiperSlide>
               <SwiperSlide>
                 <div className="testimonials-card">
-                  <div className="testimonials-card-info">
+                  <div className="testimonials-card-info card-padding">
                     <div className="icon-box">
                       <i class="bx bxl-twitter"></i>
                     </div>
@@ -109,7 +112,7 @@ function Testimonials() {
               </SwiperSlide>
               <SwiperSlide>
                 <div className="testimonials-card">
-                  <div className="testimonials-card-info">
+                  <div className="testimonials-card-info card-padding">
                     <div className="icon-box">
                       <i class="bx bxl-twitter"></i>
                     </div>
@@ -133,7 +136,7 @@ function Testimonials() {
               </SwiperSlide>
               <SwiperSlide>
                 <div className="testimonials-card">
-                  <div className="testimonials-card-info">
+                  <div className="testimonials-card-info card-padding">
                     <div className="icon-box">
                       <i class="bx bxl-twitter"></i>
                     </div>
@@ -157,7 +160,7 @@ function Testimonials() {
               </SwiperSlide>
               <SwiperSlide>
                 <div className="testimonials-card">
-                  <div className="testimonials-card-info">
+                  <div className="testimonials-card-info card-padding">
                     <div className="icon-box">
                       <i class="bx bxl-twitter"></i>
                     </div>
@@ -181,7 +184,7 @@ function Testimonials() {
               </SwiperSlide>
               <SwiperSlide>
                 <div className="testimonials-card">
-                  <div className="testimonials-card-info">
+                  <div className="testimonials-card-info card-padding">
                     <div className="icon-box">
                       <i class="bx bxl-twitter"></i>
                     </div>

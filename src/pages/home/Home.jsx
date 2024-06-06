@@ -15,10 +15,10 @@ import Projects from "../projects/Projects";
 function Home() {
   return (
     <>
-      <div className="home">
-        <div className="home-box ">
+      <div className="home page-padding">
+        <div className="home-box page-padding">
           <div className="home-text-box">
-            <h1>
+            <h1 className="h1">
               Elevate Your Digital Presence with{" "}
               <span className="tesla">Apinline</span>
             </h1>
@@ -93,7 +93,7 @@ function Home() {
           </div>
         </div>
       </div>
-      <div className="company-logos">
+      <div className="company-logos page-padding">
         <h2>Trusted by more than 100+ companies</h2>
         <Swiper
           slidesPerView={5}
@@ -147,7 +147,7 @@ function Home() {
           </SwiperSlide>
         </Swiper>
       </div>
-      <div className="our-numbers">
+      <div className="our-numbers card-padding">
         <div className="our-number-box">
           <h2>Our numbers tell more about us</h2>
         </div>

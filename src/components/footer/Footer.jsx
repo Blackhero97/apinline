@@ -9,7 +9,7 @@ function Footer() {
       <Testimonials />
       <AskedQuest />
       <footer>
-        <div className="asked-box-top">
+        <div className="asked-box-top page-padding">
           <h2>Ready to Transform Your Digital Presence?</h2>
           <p>
             Take the first step towards digital success with Apinline by your

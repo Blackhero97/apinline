@@ -3,7 +3,7 @@ import "./projects.css";
 function Projects() {
   return (
     <>
-      <div className="projects">
+      <div className="projects page-padding">
         <div className="projects-box">
           <div className="projects-box-top">
             <h2>Our Works</h2>
@@ -14,7 +14,7 @@ function Projects() {
             </p>
           </div>
           <div className="projects-box-bottom">
-            <div className="projects-card">
+            <div className="projects-card card-padding">
               <h3>Web Development</h3>
               <div className="projects-card-box">
                 <h4>Category: Web Design.</h4>
@@ -33,7 +33,7 @@ function Projects() {
                 <img src="./imgs/projects-img.png" alt="" />
               </div>
             </div>
-            <div className="projects-card">
+            <div className="projects-card card-padding">
               <h3>Web Development</h3>
               <div className="projects-card-box">
                 <h4>Category: Web Design.</h4>
@@ -52,7 +52,7 @@ function Projects() {
                 <img src="./imgs/projects-img.png" alt="" />
               </div>
             </div>
-            <div className="projects-card">
+            <div className="projects-card card-padding">
               <h3>Web Development</h3>
               <div className="projects-card-box">
                 <h4>Category: Web Design.</h4>
@@ -71,7 +71,7 @@ function Projects() {
                 <img src="./imgs/projects-img.png" alt="" />
               </div>
             </div>
-            <div className="projects-card">
+            <div className="projects-card card-padding">
               <h3>Web Development</h3>
               <div className="projects-card-box">
                 <h4>Category: Web Design.</h4>

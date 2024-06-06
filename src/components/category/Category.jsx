@@ -6,7 +6,7 @@ function Category() {
   return (
     <>
       {" "}
-      <div className="services-info">
+      <div className="services-info page-padding">
         <div className="services-info-left">
           <h2>Our Comprehensive Digital Solutions</h2>
           <p>
@@ -25,7 +25,7 @@ function Category() {
         </div>
       </div>
       <Service />
-      <div className="category">
+      <div className="category page-padding">
         <div className="category-box-top">
           <h2>Categories of Services</h2>
           <p>
@@ -71,7 +71,7 @@ function Category() {
                 </p>
               </div>
               <div className="category-info-wrapper">
-                <div className="category-info-box-bottom">
+                <div className="category-info-box-bottom card-padding">
                   <h3>Key Features</h3>
                   <div className="category-info-box-bottom-cards">
                     <div className="category-info-box-bottom-card">
@@ -106,7 +106,7 @@ function Category() {
                     </div>
                   </div>
                 </div>{" "}
-                <div className="category-info-box-bottom">
+                <div className="category-info-box-bottom card-padding">
                   <h3>Design Process</h3>
                   <p>
                     Our Web Design process follows a systematic approach to
@@ -146,7 +146,7 @@ function Category() {
                     </div>
                   </div>
                 </div>{" "}
-                <div className="category-info-box-bottom">
+                <div className="category-info-box-bottom card-padding">
                   <h3>Design Process</h3>
                   <p>
                     Our Web Design process follows a systematic approach to

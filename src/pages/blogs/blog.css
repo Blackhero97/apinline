@@ -1,7 +1,3 @@
-@import url("../../App.css");
-.blogs {
-  padding: var(--section-padding);
-}
 .blogs-card-img-boxes {
   overflow: hidden;
   border-radius: 20px;
@@ -22,7 +18,6 @@
   gap: 20px;
 }
 .blogs .blogs-card {
-  padding: 30px;
   background: var(--card-bg);
   /* box-shadow: var(--inner-shadow); */
   border: 2px solid var(--white-border);

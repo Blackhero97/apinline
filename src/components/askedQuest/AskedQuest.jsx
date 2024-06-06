@@ -10,7 +10,7 @@ function AskedQuest() {
   };
   return (
     <>
-      <div className="asked">
+      <div className="asked page-padding">
         <div className="asked-box">
           <div className="asked-box-top">
             <h2>Frequently Asked Question</h2>
@@ -21,7 +21,7 @@ function AskedQuest() {
           </div>
           <div className="asked-box-bottom-wrapper">
             <div className="asked-box-bottom-quest-box">
-              <div className="asked-card">
+              <div className="asked-card card-padding">
                 <h3>Ask A Question</h3>
                 <p>
                   Here's what some of my satisfied clients have to say about my
@@ -34,7 +34,9 @@ function AskedQuest() {
               <div
                 onClick={(i) => accordionOpen(1)}
                 className={
-                  open == 1 ? "asked-accordion active" : "asked-accordion"
+                  open == 1
+                    ? "asked-accordion  card-padding active"
+                    : "asked-accordion card-padding"
                 }
               >
                 <div className="asked-accordion-head">
@@ -58,7 +60,9 @@ function AskedQuest() {
               <div
                 onClick={(i) => accordionOpen(2)}
                 className={
-                  open == 2 ? "asked-accordion active" : "asked-accordion"
+                  open == 2
+                    ? "asked-accordion card-padding  active"
+                    : " card-padding asked-accordion"
                 }
               >
                 <div className="asked-accordion-head">
@@ -82,7 +86,9 @@ function AskedQuest() {
               <div
                 onClick={(i) => accordionOpen(3)}
                 className={
-                  open == 3 ? "asked-accordion active" : "asked-accordion"
+                  open == 3
+                    ? "asked-accordion card-padding active"
+                    : "asked-accordion card-padding"
                 }
               >
                 <div className="asked-accordion-head">
@@ -106,7 +112,9 @@ function AskedQuest() {
               <div
                 onClick={(i) => accordionOpen(4)}
                 className={
-                  open == 4 ? "asked-accordion active" : "asked-accordion"
+                  open == 4
+                    ? "asked-accordion card-padding active"
+                    : "asked-accordion card-padding"
                 }
               >
                 <div className="asked-accordion-head">

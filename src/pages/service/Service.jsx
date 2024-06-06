@@ -5,7 +5,7 @@ import { CheckCircleOutlined, RightCircleOutlined } from "@ant-design/icons";
 function Service() {
   return (
     <>
-      <div className="services">
+      <div className="services page-padding">
         <div className="services-box">
           <div className="services-box-top">
             <h2>Our Services</h2>
@@ -17,7 +17,7 @@ function Service() {
             </p>
           </div>
           <div className="services-box-bottom">
-            <div className="services-card">
+            <div className="services-card card-padding">
               <div className="services-card-img-box">
                 <img
                   src="./imgs/services-img.png"
@@ -41,7 +41,7 @@ function Service() {
                 </button>
               </div>
             </div>
-            <div className="services-card">
+            <div className="services-card card-padding ">
               <div className="services-card-img-box">
                 <img
                   src="./imgs/services-img.png"
@@ -65,7 +65,7 @@ function Service() {
                 </button>
               </div>
             </div>
-            <div className="services-card">
+            <div className="services-card card-padding">
               <div className="services-card-img-box">
                 <img
                   src="./imgs/services-img.png"
@@ -89,7 +89,7 @@ function Service() {
                 </button>
               </div>
             </div>
-            <div className="services-card">
+            <div className="services-card card-padding">
               <div className="services-card-img-box">
                 <img
                   src="./imgs/services-img.png"

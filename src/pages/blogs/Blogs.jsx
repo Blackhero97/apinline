@@ -3,7 +3,7 @@ import "./blog.css";
 function Blogs() {
   return (
     <>
-      <div className="services-info">
+      <div className="services-info page-padding">
         <div className="services-info-left">
           <h2>Empowering Your Digital Journey</h2>
           <p>
@@ -22,7 +22,7 @@ function Blogs() {
           <img src="./imgs/blog-img.png" alt="" />
         </div>
       </div>
-      <div className="blogs blogs">
+      <div className="blogs page-padding">
         <div className="blogs-box">
           <div className="blogs-box-top">
             <h2>Blogs</h2>
@@ -65,7 +65,7 @@ function Blogs() {
             </div>
           </div>
           <div className="blogs-box-bottom">
-            <div className="blogs-card">
+            <div className="blogs-card card-padding">
               <div className="blogs-card-img-boxes">
                 <img src="./imgs/blogs.png" alt="" />
               </div>
@@ -86,7 +86,7 @@ function Blogs() {
               </p>
               <button className="primary-btn">Read More</button>
             </div>
-            <div className="blogs-card">
+            <div className="blogs-card card-padding">
               <div className="blogs-card-img-boxes">
                 <img src="./imgs/blogs.png" alt="" />
               </div>
@@ -107,7 +107,7 @@ function Blogs() {
               </p>
               <button className="primary-btn">Read More</button>
             </div>
-            <div className="blogs-card">
+            <div className="blogs-card card-padding">
               <div className="blogs-card-img-boxes">
                 <img src="./imgs/blogs.png" alt="" />
               </div>
@@ -128,7 +128,7 @@ function Blogs() {
               </p>
               <button className="primary-btn">Read More</button>
             </div>
-            <div className="blogs-card">
+            <div className="blogs-card card-padding">
               <div className="blogs-card-img-boxes">
                 <img src="./imgs/blogs.png" alt="" />
               </div>
