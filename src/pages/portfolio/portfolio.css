@@ -49,6 +49,9 @@
 .portfolio-card:hover .portfolio-card-img-box {
   background: var(--primary-btn-active);
 }
+.portfolio-card:hover .light-btn {
+  background: var(--primary-btn-active);
+}
 .portfolio-card:hover {
   transform: translateY(-10px);
   box-shadow: var(--inner-shadow);
