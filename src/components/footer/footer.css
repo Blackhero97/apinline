@@ -51,7 +51,7 @@ footer ul a {
   align-items: center;
   justify-content: space-between;
   padding: 30px 0 0px 0;
-  margin-bottom: 80px;
+  padding-bottom: 80px;
   border-top: 1px solid var(--text-color);
 }
 .footer-social-box,
@@ -78,7 +78,7 @@ footer ul a {
   transform: translateY(-5px);
 }
 
-body.dark .footer-social-box a:hover {
+.app.dark .footer-social-box a:hover {
   color: var(--white-bg);
 }
 .footer-social-box h4 {

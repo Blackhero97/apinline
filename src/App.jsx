@@ -9,26 +9,30 @@ import Category from "./components/category/Category";
 import Portfolio from "./pages/portfolio/Portfolio";
 import { useLocation } from "react-router-dom";
 import ScrollToTop from "./components/scrollToTop/ScrollToTop";
+import { useState } from "react";
 function App() {
+  const [theme, setTheme] = useState("light");
   return (
     <>
-      <main className="main">
-        <BrowserRouter>
-          <Navbar />
-          <header className="main-box container ">
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/about" element={<About />} />
-              <Route path="/service" element={<Category />} />
-              <Route path="/portfolio" element={<Portfolio />} />
-              <Route path="/blogs" element={<Blogs />} />
-              <Route path="/contact" element={<Contact />} />
-            </Routes>
-            <Footer />
-            <ScrollToTop />
-          </header>
-        </BrowserRouter>
-      </main>
+      <div className={`app ${theme}`}>
+        <main className="main">
+          <BrowserRouter>
+            <Navbar theme={theme} setTheme={setTheme} />
+            <header className="main-box container ">
+              <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/about" element={<About />} />
+                <Route path="/service" element={<Category />} />
+                <Route path="/portfolio" element={<Portfolio />} />
+                <Route path="/blogs" element={<Blogs />} />
+                <Route path="/contact" element={<Contact />} />
+              </Routes>
+              <Footer />
+              <ScrollToTop />
+            </header>
+          </BrowserRouter>
+        </main>
+      </div>
     </>
   );
 }

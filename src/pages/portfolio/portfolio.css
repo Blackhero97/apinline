@@ -129,6 +129,10 @@
   transform: scale(1.1);
   color: var(--icon-color);
 }
+.app.dark .portfolio-btn-box .light-btn:hover,
+.app.dark .showcase .light-btn:hover {
+  color: #fff;
+}
 .portfolio-btn-box i {
   font-size: 20px;
 }

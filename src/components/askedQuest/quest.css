@@ -41,9 +41,7 @@
   overflow: hidden;
   transition: 0.3s ease-in-out;
 }
-body.dark .asked-accordion {
-  transition: none;
-}
+
 .asked-accordion.active {
   max-height: 350px;
   /* transform: rotate(2deg); */

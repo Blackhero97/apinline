@@ -183,9 +183,9 @@
 .about-card-info {
   max-width: 850px;
 }
-body.dark .about .number,
-body.dark .about .about-card-img-box,
-body.dark .about .line {
+.app.dark .about .number,
+.app.dark .about .about-card-img-box,
+.app.dark .about .line {
   background: var(--primary-btn);
   color: var(--title-color);
 }

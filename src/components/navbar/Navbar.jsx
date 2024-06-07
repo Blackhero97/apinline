@@ -1,28 +1,32 @@
 import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import "./navbar.css";
-function Navbar() {
-  const [isDark, setIsDark] = useState(false);
+function Navbar({ theme, setTheme }) {
+  // const [isDark, setIsDark] = useState(false);
   const [open, setOpen] = useState(false);
-  const change = () => {
-    setIsDark(!isDark);
-    console.log(isDark);
+  // const change = () => {
+  //   setIsDark(!isDark);
+  //   console.log(isDark);
+  // };
+  // useEffect(() => {
+  //   if (isDark) {
+  //     document.body.classList.add("dark");
+  //   } else {
+  //     document.body.classList.remove("dark");
+  //   }
+  // }, [isDark]);
+  const toggle_mode = () => {
+    theme == "light" ? setTheme("dark") : setTheme("light");
   };
-  useEffect(() => {
-    if (isDark) {
-      document.body.classList.add("dark");
-    } else {
-      document.body.classList.remove("dark");
-    }
-  }, [isDark]);
+
   return (
     <>
       <div className="header-box">
         <header className="header">
-          {isDark ? (
-            <img src="imgs/logodark.svg" alt="" className="logo" />
-          ) : (
+          {theme ? (
             <img src="imgs/logo.svg" alt="" className="logo" />
+          ) : (
+            <img src="imgs/logodark.svg" alt="" className="logo" />
           )}
           <nav className={open ? "open-nav" : ""}>
             <ul onClick={() => setOpen(!open)}>
@@ -39,11 +43,16 @@ function Navbar() {
                   +1 513 837-5128
                 </button>
               </a>{" "}
-              <button onClick={change} className="mode-btn primary-btn">
-                {isDark ? (
-                  <i class="bx bxs-sun"></i>
-                ) : (
+              <button
+                onClick={() => {
+                  toggle_mode();
+                }}
+                className="mode-btn primary-btn"
+              >
+                {theme ? (
                   <i class="bx bxs-moon"></i>
+                ) : (
+                  <i class="bx bxs-sun"></i>
                 )}
               </button>
               <div onClick={() => setOpen(!open)} className="close">

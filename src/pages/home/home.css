@@ -21,7 +21,7 @@ h1 {
   max-width: 1300px;
   width: 100%;
 }
-body.dark .home {
+.app.dark .home {
   background-image: none;
 }
 .home-box {
@@ -78,7 +78,7 @@ body.dark .home {
   z-index: calc(-1 * var(--i));
   transition: 0.5s ease-in-out;
 }
-body.dark .container-animation .card {
+.app.dark .container-animation .card {
   background: var(--primary-animation-card);
 }
 .container-animation .card h4 {
