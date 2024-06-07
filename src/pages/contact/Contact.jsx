@@ -13,7 +13,7 @@ function Contact() {
               collaborations. Whether you are interested in our digital
               services, have questions about our projects
             </p>
-            <div className="commitment">
+            <div className="commitment card-padding">
               <h3>Our Commitment to You</h3>
               <ul>
                 <li>

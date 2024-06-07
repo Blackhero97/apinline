@@ -265,14 +265,17 @@ body.dark .container {
     ) !important;
   }
   .founder-info h5,
-  .asked-accordion h4 {
+  .asked-accordion h4,
+  .contact-info-card h4 {
     font-size: calc(
       14px + (20 - 14) * (100vw - 320px) / (1200 - 320)
     ) !important;
   }
   p,
   .footer-box a,
-  a {
+  a,
+  .input-boxes input,
+  .input-boxes textarea {
     font-size: calc(
       12px + (16 - 12) * (100vw - 320px) / (1200 - 320)
     ) !important;
@@ -285,7 +288,9 @@ body.dark .container {
       12px + (16 - 14) * (100vw - 320px) / (1200 - 320)
     ) !important;
   }
-  .founder-info span {
+  .founder-info span,
+  .commitment ul li,
+  .contact-info-card span {
     font-size: calc(
       12px + (18 - 14) * (100vw - 320px) / (1200 - 320)
     ) !important;
@@ -493,6 +498,29 @@ body.dark .container {
     align-items: start;
     justify-content: center;
   }
+  .contact-box {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+  .contact-box .input-box label {
+    text-align: left;
+  }
+  .contact-box p {
+    margin: 20px 0 0 0;
+  }
+  .contect-box-form,
+  .input-boxes,
+  .contect-box-info {
+    max-width: 100%;
+    border-radius: 0;
+  }
+
+  .contact-box,
+  .contact-info-card {
+    box-shadow: var(--inner-shadow);
+    border-radius: 10px;
+  }
 }
 @media screen and (max-width: 768px) {
   .services-box-bottom,
@@ -503,9 +531,15 @@ body.dark .container {
     gap: 10px;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   }
+  .input-boxes {
+    flex-wrap: wrap;
+  }
   .portfolio-btn-box,
   .blogs-btn-box {
     gap: 10px;
+  }
+  .contact-info-card i {
+    font-size: 30px;
   }
   .portfolio-card-img-box {
     width: 90px;
@@ -542,7 +576,8 @@ body.dark .container {
     margin-top: 30px;
     text-align: center;
   }
-  .about-box-bottom-wrapper {
+  .about-box-bottom-wrapper,
+  .contact-info-location {
     gap: 20px;
   }
   .services-card-box {
@@ -584,6 +619,9 @@ body.dark .container {
   .services-card img {
     min-height: 180px;
   }
+  .input-boxes {
+    gap: 20px;
+  }
   .services-card,
   .projects-card,
   .portfolio-card,
@@ -606,6 +644,13 @@ body.dark .container {
   .header {
     padding: 15px 0;
   }
+  .contact-info-location {
+    padding-top: 30px;
+  }
+  .input-boxes,
+  .contect-box-form form {
+    gap: 10px;
+  }
   .footer-links {
     padding: 50px 0;
     display: grid;
@@ -617,6 +662,10 @@ body.dark .container {
   .blogs-card img {
     max-height: 200px;
     border-radius: 10px;
+  }
+  .input-boxes input,
+  .input-boxes textarea {
+    padding: 15px 20px;
   }
   .container-animation .card {
     width: 160px;
@@ -652,10 +701,15 @@ body.dark .container {
   }
   .category-link,
   .projects-card,
-  .blogs .blogs-card {
+  .blogs .blogs-card,
+  .commitment ul {
     gap: 10px;
   }
-  .testimonials-card-img-box img {
+  .commitment ul {
+    margin: 10px 0;
+  }
+  .testimonials-card-img-box img,
+  .footer-social-box a {
     width: 40px;
     height: 40px;
   }

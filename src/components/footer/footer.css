@@ -17,6 +17,9 @@ footer ul a {
 .footer-box {
   max-width: 300px;
 }
+.footer-social-box a i {
+  font-size: 20px;
+}
 .footer-box h4 {
   color: var(--title-color);
   font-family: Outfit;

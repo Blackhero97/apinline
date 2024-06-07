@@ -14,7 +14,6 @@
   color: var(--title-color);
 }
 .commitment {
-  padding: 40px 0;
 }
 .commitment ul {
   list-style: none;
@@ -103,10 +102,9 @@
   color: var(--title-color);
 }
 .contact-info-location {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
   padding-top: 50px;
 }
 .contact-info-card {
