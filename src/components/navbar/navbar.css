@@ -18,6 +18,7 @@ a.active {
   background: var(--fon-rangi-one);
   padding: 10px 15px;
   border-radius: 5px;
+  box-shadow: var(--inner-shadow);
   color: var(--white-text);
 }
 nav ul {
