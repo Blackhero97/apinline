@@ -244,6 +244,7 @@ body.dark .container {
 }
 @media screen and (max-width: 1200px) {
   .services h3,
+  .services-card h3,
   our-number-box h3,
   .projects h3,
   .asked-card h3,
@@ -262,7 +263,7 @@ body.dark .container {
   .founder-info h5,
   .asked-accordion h4 {
     font-size: calc(
-      12px + (20 - 14) * (100vw - 320px) / (1200 - 320)
+      14px + (20 - 14) * (100vw - 320px) / (1200 - 320)
     ) !important;
   }
   p,
@@ -294,6 +295,16 @@ body.dark .container {
     background: var(--primary-btn);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+  }
+  .container-animation .card {
+    width: 180px;
+    height: 250px;
+  }
+  .home-box {
+    background-size: 500px;
+  }
+  .wrapper {
+    padding: 15px;
   }
   .services-info-left {
     text-align: center;
@@ -354,10 +365,10 @@ body.dark .container {
   }
   .home-text-box {
     text-align: center;
-    backdrop-filter: blur(50px);
+    /* backdrop-filter: blur(50px);
     padding: 20px;
     box-shadow: var(--inner-shadow);
-    border-radius: 20px;
+    border-radius: 20px; */
   }
   .home-btn-box {
     justify-content: center;
@@ -445,9 +456,18 @@ body.dark .container {
     justify-content: center;
     gap: 20px;
   }
+  .services-box-top,
+  .projects-box-top {
+    margin-bottom: 20px;
+  }
   .category-box-bottom h4,
   .category-box-bottom p {
     text-align: left;
+  }
+  .home {
+    display: flex;
+    align-items: start;
+    justify-content: center;
   }
 }
 @media screen and (max-width: 768px) {
@@ -455,6 +475,18 @@ body.dark .container {
   .projects-box-bottom {
     gap: 15px;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+  .container-animation .card {
+    width: 180px;
+    height: 250px;
+  }
+  .home-box {
+    background-size: 450px;
+  }
+  .home {
+    display: flex;
+    align-items: start;
+    justify-content: center;
   }
   .category-box-bottom h4,
   .category-box-bottom p {
@@ -517,13 +549,27 @@ body.dark .container {
   .services-card img {
     min-height: 180px;
   }
-  .services-card {
+  .services-card,
+  .projects-card {
     gap: 10px;
   }
 }
 @media screen and (max-width: 576px) {
   .header {
     padding: 15px 0;
+  }
+  .container-animation .card {
+    width: 160px;
+    height: 220px;
+    left: 150px;
+  }
+  .home {
+    background-position-x: center;
+    background-position-y: 185px;
+    background-size: 140%;
+  }
+  .home-box {
+    background-size: 0;
   }
   .about-card h3 {
     margin-bottom: 10px;
@@ -541,7 +587,8 @@ body.dark .container {
   .category-link .light-btn {
     padding: 14px;
   }
-  .category-link {
+  .category-link,
+  .projects-card {
     gap: 10px;
   }
   .testimonials-card-img-box img {

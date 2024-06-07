@@ -110,10 +110,10 @@ function Home() {
               slidesPerView: 3,
             },
             576: {
-              slidesPerView: 2,
+              slidesPerView: 3,
             },
             320: {
-              slidesPerView: 2,
+              slidesPerView: 3,
             },
           }}
           autoplay={{

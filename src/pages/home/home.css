@@ -14,11 +14,11 @@ h1 {
   background-position-y: top;
   background-size: 60%;
   background-repeat: no-repeat;
-  height: 100vh;
+  height: 80vh;
   display: flex;
   align-items: center;
-  justify-content: center;
-  max-width: 1200px;
+  justify-content: space-between;
+  max-width: 1300px;
   width: 100%;
 }
 body.dark .home {
@@ -31,9 +31,10 @@ body.dark .home {
   background-repeat: no-repeat;
   background-position-x: right;
   background-position-y: bottom;
-  background-size: 600px;
+  background-size: 650px;
   position: relative;
   display: flex;
+  gap: 20px;
   align-items: center;
   /* flex-wrap: wrap; */
   z-index: 2;
