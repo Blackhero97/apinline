@@ -23,15 +23,17 @@ function Navbar({ theme, setTheme }) {
     <>
       <div className="header-box">
         <header className="header">
-          {theme == "light" ? (
-            <Link to={"/"}>
-              <img src="imgs/logo.svg" alt="" className="logo" />
-            </Link>
-          ) : (
-            <Link to={"/"}>
-              <img src="imgs/logodark.svg" alt="" className="logo" />
-            </Link>
-          )}
+          <div className="logo">
+            {theme == "light" ? (
+              <Link to={"/"}>
+                <img src="imgs/logo.svg" alt="" className="logo" />
+              </Link>
+            ) : (
+              <Link to={"/"}>
+                <img src="imgs/logodark.svg" alt="" className="logo" />
+              </Link>
+            )}
+          </div>
           <nav className={open ? "open-nav" : ""}>
             <ul onClick={() => setOpen(!open)}>
               <NavLink to={"/"} className={""}>

@@ -636,7 +636,7 @@ main {
 }
 @media screen and (max-width: 576px) {
   .header {
-    padding: 15px 0;
+    padding: 10px 0;
   }
   .contact-info-location {
     padding-top: 30px;
