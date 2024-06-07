@@ -15,7 +15,7 @@
   padding: 0 15px;
 }
 a.active {
-  background: var(--primary-btn);
+  background: var(--fon-rangi-one);
   padding: 10px 15px;
   border-radius: 5px;
   color: var(--white-text);

@@ -19,7 +19,11 @@ function Navbar() {
     <>
       <div className="header-box">
         <header className="header">
-          <img src="imgs/logo.svg" alt="" className="logo" />{" "}
+          {isDark ? (
+            <img src="imgs/logodark.svg" alt="" className="logo" />
+          ) : (
+            <img src="imgs/logo.svg" alt="" className="logo" />
+          )}
           <nav className={open ? "open-nav" : ""}>
             <ul onClick={() => setOpen(!open)}>
               <NavLink to={"/"} className={""}>
