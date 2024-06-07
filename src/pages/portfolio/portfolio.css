@@ -51,6 +51,7 @@
 }
 .portfolio-card:hover .light-btn {
   background: var(--primary-btn-active);
+  color: #fff;
 }
 .portfolio-card:hover {
   transform: translateY(-10px);
