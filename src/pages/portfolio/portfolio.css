@@ -13,14 +13,10 @@
   text-align: center;
   margin-bottom: 40px;
 }
-.portfolio-card {
-  max-width: 400px;
-}
+
 .portfolio-box-bottom {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
   gap: 20px;
 }
 .portfolio-card {

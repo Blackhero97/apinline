@@ -250,7 +250,8 @@ body.dark .container {
   .asked-card h3,
   .about-card h3,
   .category-box-bottom h3,
-  .our-numbers h3 {
+  .our-numbers h3,
+  .portfolio-card h3 {
     font-size: calc(
       25px + (30 - 20) * (100vw - 320px) / (1200 - 320)
     ) !important;
@@ -295,6 +296,22 @@ body.dark .container {
     background: var(--primary-btn);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+  }
+  .portfolio-box-bottom,
+  .showcase .portfolio-box-bottom,
+  .blogs .blogs-box-bottom {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
+  }
+  .showcase .portfolio-card {
+    flex-direction: column;
+  }
+  .showcase .portfolio-card-info-box {
+    max-width: 100%;
+  }
+  .portfolio-card-img-boxes {
+    display: none;
   }
   .container-animation .card {
     width: 180px;
@@ -472,9 +489,20 @@ body.dark .container {
 }
 @media screen and (max-width: 768px) {
   .services-box-bottom,
-  .projects-box-bottom {
-    gap: 15px;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  .projects-box-bottom,
+  .portfolio-box-bottom,
+  .showcase .portfolio-box-bottom,
+  .blogs .blogs-box-bottom {
+    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  }
+  .portfolio-btn-box,
+  .blogs-btn-box {
+    gap: 10px;
+  }
+  .portfolio-card-img-box {
+    width: 90px;
+    height: 90px;
   }
   .container-animation .card {
     width: 180px;
@@ -550,14 +578,28 @@ body.dark .container {
     min-height: 180px;
   }
   .services-card,
-  .projects-card {
+  .projects-card,
+  .portfolio-card,
+  .blogs .blogs-card {
     gap: 10px;
+  }
+  .blog-btn-box {
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 5px;
+  }
+  .blog-btn-box button {
+    width: 100%;
+  }
+  .blogs-card-img-boxes {
+    border-radius: 10px;
   }
 }
 @media screen and (max-width: 576px) {
   .header {
     padding: 15px 0;
   }
+
   .container-animation .card {
     width: 160px;
     height: 220px;
@@ -584,16 +626,24 @@ body.dark .container {
   .number-box {
     display: none;
   }
+  .team-cards {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
   .category-link .light-btn {
     padding: 14px;
   }
   .category-link,
-  .projects-card {
+  .projects-card,
+  .blogs .blogs-card {
     gap: 10px;
   }
   .testimonials-card-img-box img {
     width: 40px;
     height: 40px;
+  }
+  .about-card-img-box {
+    width: 60px;
+    height: 60px;
   }
   table {
     margin-top: 20px;
@@ -611,7 +661,10 @@ body.dark .container {
     padding: 10px 20px 30px 20px;
     border-bottom: 1px solid var(--white-border);
   }
-
+  .portfolio-box-bottom {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
   .category-info-wrapper {
     gap: 10px;
   }

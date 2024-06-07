@@ -1,5 +1,15 @@
-import React from "react";
 import "./about.css";
+import React, { useRef, useState } from "react";
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+
+// import required modules
+import { Pagination, Navigation, Autoplay } from "swiper/modules";
 function About() {
   return (
     <>
@@ -103,93 +113,138 @@ function About() {
                 engagement, and higher ROI. Our tailored solutions are designed
                 to meet your unique business needs, ensuring lasting success.
               </p>
-            </div>
-            <div className="team-cards">
-              <div className="team-card card-padding">
-                <div className="team-card-img-box">
-                  <img src="./imgs/team.png" alt="" />
-                </div>
-                <h4>Ortiqov Anvarjon</h4>
-                <h5>Project manager</h5>
-                <div className="social-box">
-                  <div className="social-icon">
-                    <i class="bx bxl-facebook-circle"></i>
+            </div>{" "}
+            <Swiper
+              slidesPerView={4}
+              spaceBetween={15}
+              loop={true}
+              breakpoints={{
+                1200: {
+                  slidesPerView: 4,
+                },
+                992: {
+                  slidesPerView: 3,
+                },
+                768: {
+                  slidesPerView: 3,
+                },
+                576: {
+                  slidesPerView: 2,
+                  spaceBetween: 10,
+                },
+                475: {
+                  spaceBetween: 10,
+                  slidesPerView: 2,
+                },
+                320: {
+                  spaceBetween: 10,
+                  slidesPerView: 1,
+                },
+              }}
+              autoplay={{
+                delay: 2500,
+                disableOnInteraction: false,
+              }}
+              pagination={{
+                clickable: false,
+              }}
+              navigation={false}
+              modules={[Pagination, Autoplay, Navigation]}
+              className="mySwiper"
+            >
+              <SwiperSlide>
+                <div className="team-card card-padding">
+                  <div className="team-card-img-box">
+                    <img src="./imgs/team.png" alt="" />
                   </div>
-                  <div className="social-icon">
-                    <i class="bx bxl-facebook-circle"></i>
-                  </div>
-                  <div className="social-icon">
-                    <i class="bx bxl-facebook-circle"></i>
-                  </div>
-                  <div className="social-icon">
-                    <i class="bx bxl-facebook-circle"></i>
-                  </div>
-                </div>
-              </div>
-              <div className="team-card card-padding">
-                <div className="team-card-img-box">
-                  <img src="./imgs/team.png" alt="" />
-                </div>
-                <h4>Ortiqov Anvarjon</h4>
-                <h5>Project manager</h5>
-                <div className="social-box">
-                  <div className="social-icon">
-                    <i class="bx bxl-facebook-circle"></i>
-                  </div>
-                  <div className="social-icon">
-                    <i class="bx bxl-facebook-circle"></i>
-                  </div>
-                  <div className="social-icon">
-                    <i class="bx bxl-facebook-circle"></i>
-                  </div>
-                  <div className="social-icon">
-                    <i class="bx bxl-facebook-circle"></i>
-                  </div>
-                </div>
-              </div>
-              <div className="team-card card-padding">
-                <div className="team-card-img-box">
-                  <img src="./imgs/team.png" alt="" />
-                </div>
-                <h4>Ortiqov Anvarjon</h4>
-                <h5>Project manager</h5>
-                <div className="social-box">
-                  <div className="social-icon">
-                    <i class="bx bxl-facebook-circle"></i>
-                  </div>
-                  <div className="social-icon">
-                    <i class="bx bxl-facebook-circle"></i>
-                  </div>
-                  <div className="social-icon">
-                    <i class="bx bxl-facebook-circle"></i>
-                  </div>
-                  <div className="social-icon">
-                    <i class="bx bxl-facebook-circle"></i>
+                  <h4>Ortiqov Anvarjon</h4>
+                  <h5>Project manager</h5>
+                  <div className="social-box">
+                    <div className="social-icon">
+                      <i class="bx bxl-facebook-circle"></i>
+                    </div>
+                    <div className="social-icon">
+                      <i class="bx bxl-facebook-circle"></i>
+                    </div>
+                    <div className="social-icon">
+                      <i class="bx bxl-facebook-circle"></i>
+                    </div>
+                    <div className="social-icon">
+                      <i class="bx bxl-facebook-circle"></i>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div className="team-card card-padding">
-                <div className="team-card-img-box">
-                  <img src="./imgs/team.png" alt="" />
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="team-card card-padding">
+                  <div className="team-card-img-box">
+                    <img src="./imgs/team.png" alt="" />
+                  </div>
+                  <h4>Ortiqov Anvarjon</h4>
+                  <h5>Project manager</h5>
+                  <div className="social-box">
+                    <div className="social-icon">
+                      <i class="bx bxl-facebook-circle"></i>
+                    </div>
+                    <div className="social-icon">
+                      <i class="bx bxl-facebook-circle"></i>
+                    </div>
+                    <div className="social-icon">
+                      <i class="bx bxl-facebook-circle"></i>
+                    </div>
+                    <div className="social-icon">
+                      <i class="bx bxl-facebook-circle"></i>
+                    </div>
+                  </div>
                 </div>
-                <h4>Ortiqov Anvarjon</h4>
-                <h5>Project manager</h5>
-                <div className="social-box">
-                  <div className="social-icon">
-                    <i class="bx bxl-facebook-circle"></i>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="team-card card-padding">
+                  <div className="team-card-img-box">
+                    <img src="./imgs/team.png" alt="" />
                   </div>
-                  <div className="social-icon">
-                    <i class="bx bxl-facebook-circle"></i>
-                  </div>
-                  <div className="social-icon">
-                    <i class="bx bxl-facebook-circle"></i>
-                  </div>
-                  <div className="social-icon">
-                    <i class="bx bxl-facebook-circle"></i>
+                  <h4>Ortiqov Anvarjon</h4>
+                  <h5>Project manager</h5>
+                  <div className="social-box">
+                    <div className="social-icon">
+                      <i class="bx bxl-facebook-circle"></i>
+                    </div>
+                    <div className="social-icon">
+                      <i class="bx bxl-facebook-circle"></i>
+                    </div>
+                    <div className="social-icon">
+                      <i class="bx bxl-facebook-circle"></i>
+                    </div>
+                    <div className="social-icon">
+                      <i class="bx bxl-facebook-circle"></i>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="team-card card-padding">
+                  <div className="team-card-img-box">
+                    <img src="./imgs/team.png" alt="" />
+                  </div>
+                  <h4>Ortiqov Anvarjon</h4>
+                  <h5>Project manager</h5>
+                  <div className="social-box">
+                    <div className="social-icon">
+                      <i class="bx bxl-facebook-circle"></i>
+                    </div>
+                    <div className="social-icon">
+                      <i class="bx bxl-facebook-circle"></i>
+                    </div>
+                    <div className="social-icon">
+                      <i class="bx bxl-facebook-circle"></i>
+                    </div>
+                    <div className="social-icon">
+                      <i class="bx bxl-facebook-circle"></i>
+                    </div>
+                  </div>
+                </div>
+              </SwiperSlide>
+            </Swiper>
           </div>
         </div>
       </div>

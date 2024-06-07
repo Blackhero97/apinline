@@ -8,7 +8,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 // import required modules
-import { Pagination, Navigation, Autoplay } from "swiper/modules";
+import { Autoplay } from "swiper/modules";
 import "./testimonials.css";
 function Testimonials() {
   return (
@@ -55,11 +55,7 @@ function Testimonials() {
                 delay: 2500,
                 disableOnInteraction: false,
               }}
-              pagination={{
-                clickable: false,
-              }}
-              navigation={false}
-              modules={[Pagination, Autoplay, Navigation]}
+              modules={[Autoplay]}
               className="mySwiper"
             >
               <SwiperSlide>
