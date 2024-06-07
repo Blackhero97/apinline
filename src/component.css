@@ -69,6 +69,7 @@ h2 {
 @media screen and (max-width: 576px) {
   .card-padding {
     padding: 12px;
+    border-radius: 10px;
   }
   .page-padding {
     padding: 20px 0;
@@ -78,6 +79,9 @@ h2 {
   }
   h2 {
     font-size: 27px;
+  }
+  .main-box {
+    padding: 0 10px;
   }
 }
 @media screen and (max-width: 425px) {
