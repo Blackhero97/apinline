@@ -599,7 +599,10 @@ body.dark .container {
   .header {
     padding: 15px 0;
   }
-
+  .blogs-card img {
+    max-height: 200px;
+    border-radius: 10px;
+  }
   .container-animation .card {
     width: 160px;
     height: 220px;
