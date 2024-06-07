@@ -12,6 +12,7 @@ import "swiper/css/navigation";
 import { Pagination, Navigation, Autoplay } from "swiper/modules";
 import Service from "../service/Service";
 import Projects from "../projects/Projects";
+import { Link } from "react-router-dom";
 function Home() {
   return (
     <>
@@ -29,8 +30,12 @@ function Home() {
               the digital sphere.
             </p>
             <div className="home-btn-box">
-              <button className="primary-btn">Schedule a Call</button>
-              <button className="light-btn">View Projects</button>
+              <Link to={"/contact"}>
+                <button className="primary-btn">Schedule a Call</button>
+              </Link>
+              <Link to={"/portfolio"}>
+                <button className="light-btn">View Projects</button>
+              </Link>
             </div>
           </div>
           <div className="home-img-box">

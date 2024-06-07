@@ -53,6 +53,9 @@ body.dark .home {
   gap: 20px;
   align-items: center;
 }
+.home-btn-box a {
+  padding: 0;
+}
 .card-head {
   display: flex;
   align-items: center;

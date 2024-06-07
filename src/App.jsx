@@ -7,6 +7,8 @@ import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/footer/Footer";
 import Category from "./components/category/Category";
 import Portfolio from "./pages/portfolio/Portfolio";
+import { useLocation } from "react-router-dom";
+import ScrollToTop from "./components/scrollToTop/ScrollToTop";
 function App() {
   return (
     <>
@@ -23,6 +25,7 @@ function App() {
               <Route path="/contact" element={<Contact />} />
             </Routes>
             <Footer />
+            <ScrollToTop />
           </header>
         </BrowserRouter>
       </main>
