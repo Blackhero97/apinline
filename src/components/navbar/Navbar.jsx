@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "./navbar.css";
 function Navbar({ theme, setTheme }) {
   // const [isDark, setIsDark] = useState(false);
@@ -23,10 +23,14 @@ function Navbar({ theme, setTheme }) {
     <>
       <div className="header-box">
         <header className="header">
-          {theme ? (
-            <img src="imgs/logo.svg" alt="" className="logo" />
+          {theme == "light" ? (
+            <Link to={"/"}>
+              <img src="imgs/logo.svg" alt="" className="logo" />
+            </Link>
           ) : (
-            <img src="imgs/logodark.svg" alt="" className="logo" />
+            <Link to={"/"}>
+              <img src="imgs/logodark.svg" alt="" className="logo" />
+            </Link>
           )}
           <nav className={open ? "open-nav" : ""}>
             <ul onClick={() => setOpen(!open)}>
