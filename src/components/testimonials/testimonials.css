@@ -32,7 +32,7 @@
   justify-content: space-between;
 }
 .testimonials-card-founder {
-  padding: 0 20px;
+  /* padding: 0 20px; */
   display: flex;
   align-items: center;
   gap: 20px;
