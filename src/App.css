@@ -523,13 +523,17 @@ body.dark .container {
   }
 }
 @media screen and (max-width: 768px) {
-  .services-box-bottom,
-  .projects-box-bottom,
+  .services-box-bottom {
+    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+  }
+
   .portfolio-box-bottom,
   .showcase .portfolio-box-bottom,
   .blogs .blogs-box-bottom {
-    gap: 10px;
+    display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 10px;
   }
   .input-boxes {
     flex-wrap: wrap;
