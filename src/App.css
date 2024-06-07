@@ -52,6 +52,8 @@ h6 {
     rgba(255, 255, 255, 0.128) -45.5%,
     rgba(59, 108, 236, 0.16) 47.54%
   );
+
+  --nav-bg: #fff;
   --primary-animation-card: linear-gradient(
     90deg,
     #3428e0b9 0%,
@@ -93,6 +95,7 @@ h6 {
   --icon-color: #fff;
 }
 .dark {
+  --nav-bg: #0f111b;
   --fon-rangi-one: #0f111b;
   --white-border: #c2c7ff44;
   --icon-color: #000;
@@ -293,7 +296,7 @@ body.dark .container {
   .close {
     display: block;
     font-size: 25px;
-    background: var(--primary-btn);
+    background: var(--primary-btn-hover);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
@@ -336,16 +339,20 @@ body.dark .container {
     max-width: 400px;
     width: 100%;
     height: 100vh;
-    background: #fffffff6;
+    background: var(--nav-bg);
     box-shadow: var(--inner-shadow);
     border: 2px solid var(--white-border);
     padding: 40px 0;
+    display: block;
     z-index: 1000;
     transform: translateX(-500px);
     transition: 0.3s ease-in-out;
   }
   .open-nav {
     transform: translateX(0px);
+  }
+  body.dark nav a {
+    color: var(#fff);
   }
 
   nav ul {
@@ -598,6 +605,14 @@ body.dark .container {
 @media screen and (max-width: 576px) {
   .header {
     padding: 15px 0;
+  }
+  .footer-links {
+    padding: 50px 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
+  .footer-links {
+    gap: 20px;
   }
   .blogs-card img {
     max-height: 200px;
