@@ -107,6 +107,9 @@
   gap: 30px;
   padding-top: 50px;
 }
+form:hover .primary-btn {
+  background: var(--primary-btn-active);
+}
 .contact-info-card {
   padding: 30px 40px;
   border-radius: 20px;

@@ -227,6 +227,7 @@
   background: var(--primary-btn-active);
   color: var(--white-text);
 }
+
 .line {
   width: 1px;
   margin: auto;

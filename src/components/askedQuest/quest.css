@@ -42,9 +42,16 @@
   transition: 0.3s ease-in-out;
 }
 
+.asked-box-bottom-wrapper:hover .primary-btn {
+  background: var(--primary-btn-active);
+}
 .asked-accordion.active {
   max-height: 350px;
   /* transform: rotate(2deg); */
+}
+.asked-accordion:hover .open-box {
+  background: var(--primary-btn-active);
+  color: #fff;
 }
 
 .asked-card:hover,

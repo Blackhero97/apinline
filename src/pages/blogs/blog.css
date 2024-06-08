@@ -44,7 +44,11 @@
   transform: scale(1.1);
   /* filter: grayscale(100%); */
 }
-
+.blogs-card:hover .primary-btn,
+.blogs-card:hover .light-btn {
+  background: var(--primary-btn-active);
+  color: #fff;
+}
 .blogs .blogs-card h3 {
   color: var(--title-color);
   font-family: Outfit;

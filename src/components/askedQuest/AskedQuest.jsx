@@ -42,7 +42,11 @@ function AskedQuest() {
                 <div className="asked-accordion-head">
                   <h4>Can you work with clients remotely?</h4>
                   <div className="open-box">
-                    <i class="bx bx-plus"></i>
+                    {open == 1 ? (
+                      <i class="bx bx-minus"></i>
+                    ) : (
+                      <i class="bx bx-plus"></i>
+                    )}
                   </div>
                 </div>
 
@@ -68,7 +72,11 @@ function AskedQuest() {
                 <div className="asked-accordion-head">
                   <h4>How long does complete a web design project?</h4>
                   <div className="open-box">
-                    <i class="bx bx-plus"></i>
+                    {open == 2 ? (
+                      <i class="bx bx-minus"></i>
+                    ) : (
+                      <i class="bx bx-plus"></i>
+                    )}
                   </div>
                 </div>
 
@@ -94,7 +102,11 @@ function AskedQuest() {
                 <div className="asked-accordion-head">
                   <h4>Do you offer website maintenance services?</h4>
                   <div className="open-box">
-                    <i class="bx bx-plus"></i>
+                    {open == 3 ? (
+                      <i class="bx bx-minus"></i>
+                    ) : (
+                      <i class="bx bx-plus"></i>
+                    )}
                   </div>
                 </div>
 
@@ -120,7 +132,11 @@ function AskedQuest() {
                 <div className="asked-accordion-head">
                   <h4>Can you optimize my website for search engines?</h4>
                   <div className="open-box">
-                    <i class="bx bx-plus"></i>
+                    {open == 4 ? (
+                      <i class="bx bx-minus"></i>
+                    ) : (
+                      <i class="bx bx-plus"></i>
+                    )}
                   </div>
                 </div>
                 <div className="asked-accordion-body">

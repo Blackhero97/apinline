@@ -37,6 +37,9 @@
   transform: translateY(-10px);
   box-shadow: none;
 }
+.services-card:hover .primary-btn {
+  background: var(--primary-btn-active);
+}
 .services-card img {
   transition: 0.3s ease-in-out;
   width: 100%;
@@ -89,6 +92,9 @@
 .category h2 {
   text-align: center;
 }
+.category-box-bottom {
+  position: relative;
+}
 .category-link button {
   display: flex;
   align-items: center;
@@ -98,11 +104,16 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+  position: sticky;
+  top: 110px;
+  position: -webkit-sticky;
+  align-self: flex-start;
 }
 .category-info-box p {
   text-align: left;
 }
 .category-box-bottom {
+  position: relative;
   display: flex;
   gap: 60px;
   justify-content: center;
