@@ -13,10 +13,20 @@ import { Pagination, Navigation, Autoplay } from "swiper/modules";
 import Service from "../service/Service";
 import Projects from "../projects/Projects";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 function Home() {
   return (
     <>
       <div className="home page-padding">
+        <Helmet>
+          <meta charSet="utf-8" />
+          <title>Home page</title>
+          <meta
+            name="keywords"
+            content="Software , UI/UX , UX and UI , Web programming, JavaScript, React , CSS , HTML , Web design, Mobile application, Seo"
+          />
+          <link rel="canonical" href="/" />
+        </Helmet>
         <div className="home-box page-padding">
           <div className="home-text-box">
             <h1 className="h1">

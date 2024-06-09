@@ -1,10 +1,20 @@
 import React from "react";
 import "./contact.css";
+import { Helmet } from "react-helmet-async";
 
 function Contact() {
   return (
     <>
       <div className="contact page-padding">
+        <Helmet>
+          <meta charSet="utf-8" />
+          <title>Contact page</title>
+          <meta
+            name="keywords"
+            content="Software , UI/UX , UX and UI , Web programming, JavaScript, React , CSS , HTML , Web design, Mobile application, Seo"
+          />
+          <link rel="canonical" href="/contact" />
+        </Helmet>
         <div className="contact-box">
           <div className="contect-box-info card-padding">
             <h2>Connect with Us Today!</h2>

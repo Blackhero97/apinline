@@ -1,11 +1,21 @@
 import React from "react";
 import "./services.css";
 import { CheckCircleOutlined, RightCircleOutlined } from "@ant-design/icons";
+import { Helmet } from "react-helmet";
 
 function Service() {
   return (
     <>
       <div className="services page-padding">
+        <Helmet>
+          <meta charSet="utf-8" />
+          <title>Services page</title>
+          <meta
+            name="keywords"
+            content="Software , UI/UX , UX and UI , Web programming, JavaScript, React , CSS , HTML , Web design, Mobile application, Seo"
+          />
+          <link rel="canonical" href="/service" />
+        </Helmet>
         <div className="services-box">
           <div className="services-box-top">
             <h2>Our Services</h2>
@@ -51,7 +61,10 @@ function Service() {
               </div>
               <h3>Web Development</h3>
               <p>
-              Apinline specializes in creating modern, interactive, and intuitive websites tailored to your business needs. We focus on user experience (UX/UI) and ensure the highest standards of security and performance using the latest technologies.
+                Apinline specializes in creating modern, interactive, and
+                intuitive websites tailored to your business needs. We focus on
+                user experience (UX/UI) and ensure the highest standards of
+                security and performance using the latest technologies.
               </p>
               <div className="services-card-box">
                 <h4>Starts at Price: $1,500</h4>
@@ -71,7 +84,9 @@ function Service() {
               </div>
               <h3> Telegram Bot Development:</h3>
               <p>
-              Our team develops Telegram bots for various purposes. From automating customer service to streamlining processes, we provide solutions that enhance efficiency and engagement.
+                Our team develops Telegram bots for various purposes. From
+                automating customer service to streamlining processes, we
+                provide solutions that enhance efficiency and engagement.
               </p>
               <div className="services-card-box">
                 <h4>Starts at Price: $500</h4>
@@ -91,7 +106,10 @@ function Service() {
               </div>
               <h3>SMM (Social Media Management):</h3>
               <p>
-              We offer social media management services to help grow your business online. Our experts develop effective strategies to enhance your brand's presence, engage with customers, and boost sales.
+                We offer social media management services to help grow your
+                business online. Our experts develop effective strategies to
+                enhance your brand's presence, engage with customers, and boost
+                sales.
               </p>
               <div className="services-card-box">
                 <h4>Starts at Price: $500</h4>
@@ -111,7 +129,9 @@ function Service() {
               </div>
               <h3>Mobile App Development:</h3>
               <p>
-              With extensive experience in developing mobile applications for both Android and iOS platforms, we transform your ideas into fully functional apps using the latest tools and technologies.
+                With extensive experience in developing mobile applications for
+                both Android and iOS platforms, we transform your ideas into
+                fully functional apps using the latest tools and technologies.
               </p>
               <div className="services-card-box">
                 <h4>Starts at Price: $500</h4>

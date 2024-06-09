@@ -10,10 +10,20 @@ import "swiper/css/navigation";
 
 // import required modules
 import { Pagination, Navigation, Autoplay } from "swiper/modules";
+import { Helmet } from "react-helmet-async";
 function About() {
   return (
     <>
       <div className="about page-padding">
+        <Helmet>
+          <meta charSet="utf-8" />
+          <title>About page</title>
+          <meta
+            name="keywords"
+            content="Software , UI/UX , UX and UI , Web programming, JavaScript, React , CSS , HTML , Web design, Mobile application, Seo"
+          />
+          <link rel="canonical" href="/about" />
+        </Helmet>
         <div className="about-box">
           <div className="about-box-top">
             <h2>Apinline - a reliablepartner for your digital project</h2>

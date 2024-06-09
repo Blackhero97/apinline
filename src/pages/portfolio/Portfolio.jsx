@@ -1,10 +1,20 @@
 import { RightCircleOutlined } from "@ant-design/icons";
 import React from "react";
 import "./portfolio.css";
+import { Helmet } from "react-helmet-async";
 function Portfolio() {
   return (
     <>
       <div className="services-info page-padding">
+        <Helmet>
+          <meta charSet="utf-8" />
+          <title>Portfolio page</title>
+          <meta
+            name="keywords"
+            content="Software , UI/UX , UX and UI , Web programming, JavaScript, React , CSS , HTML , Web design, Mobile application, Seo"
+          />
+          <link rel="canonical" href="/portfolio" />
+        </Helmet>
         <div className="services-info-left">
           <h2>Empowering Your Digital Vision</h2>
           <p>

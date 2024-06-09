@@ -1,9 +1,19 @@
 import React from "react";
 import "./blog.css";
+import { Helmet } from "react-helmet-async";
 function Blogs() {
   return (
     <>
       <div className="services-info page-padding">
+        <Helmet>
+          <meta charSet="utf-8" />
+          <title>Blogs page</title>
+          <meta
+            name="keywords"
+            content="Software , UI/UX , UX and UI , Web programming, JavaScript, React , CSS , HTML , Web design, Mobile application, Seo"
+          />
+          <link rel="canonical" href="/blogs" />
+        </Helmet>
         <div className="services-info-left">
           <h2>Empowering Your Digital Journey</h2>
           <p>
