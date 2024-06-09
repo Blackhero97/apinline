@@ -76,7 +76,7 @@ function Testimonials() {
                       <img src="./imgs/founder.png" alt="" />
                     </div>
                     <div className="founder-info">
-                      <h5>Hasanboy Nurmuhammadov</h5>
+                      <h5>Luigy Restaraunt</h5>
                       <span>Founder</span>
                     </div>
                   </div>
