@@ -55,7 +55,7 @@ function Navbar({ theme, setTheme }) {
                 }}
                 className="mode-btn primary-btn"
               >
-                {theme ? (
+                {theme == "light" ? (
                   <i class="bx bxs-moon"></i>
                 ) : (
                   <i class="bx bxs-sun"></i>
