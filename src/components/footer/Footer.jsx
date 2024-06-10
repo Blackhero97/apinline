@@ -28,41 +28,71 @@ function Footer() {
           <div className="footer-box">
             <h4>Home</h4>
             <ul>
-              <Link>Our services</Link>
-              <Link>Our Testimonials</Link>
-              <Link>FAQ</Link>
-              <Link>Partners</Link>
+              <li>
+                <Link>Our services</Link>
+              </li>
+              <li>
+                <Link>Our Testimonials</Link>
+              </li>
+              <li>
+                <Link>FAQ</Link>
+              </li>
+              <li>
+                <Link>Partners</Link>
+              </li>
             </ul>
           </div>
           <div className="footer-box">
             <h4>Services</h4>
             <ul>
-              <Link>Web Design</Link>
-              <Link>Website Development</Link>
-              <Link>App Development</Link>
-              <Link>Digital Marketing</Link>
+              <li>
+                <Link>Web Design</Link>
+              </li>
+              <li>
+                <Link>Website Development</Link>
+              </li>
+              <li>
+                <Link>App Development</Link>
+              </li>
+              <li>
+                <Link>Digital Marketing</Link>
+              </li>
             </ul>
           </div>
           <div className="footer-box">
             <h4>About Us</h4>
             <ul>
-              <Link>Our Team</Link>
-              <Link>Achievements</Link>
-              <Link>Awards</Link>
+              <li>
+                <Link>Our Team</Link>
+              </li>
+              <li>
+                <Link>Achievements</Link>
+              </li>
+              <li>
+                <Link>Awards</Link>
+              </li>
             </ul>
           </div>
           <div className="footer-box">
             <h4>Blogs</h4>
             <ul>
-              <Link>Our Blogs</Link>
+              <li>
+                <Link>Our Blogs</Link>
+              </li>
             </ul>
           </div>
           <div className="footer-box">
             <h4>Contact us</h4>
             <ul>
-              <Link>Email: apinline@gmail.com</Link>
-              <Link>Phone: +1 513 837-5128</Link>
-              <Link>Location: Namangan , Chust 35</Link>
+              <li>
+                <Link>Email: apinline@gmail.com</Link>
+              </li>
+              <li>
+                <Link>Phone: +1 513 837-5128</Link>
+              </li>
+              <li>
+                <Link>Location: Namangan , Chust 35</Link>
+              </li>
             </ul>
           </div>
         </div>
@@ -87,13 +117,21 @@ function Footer() {
           </div>
         </div>{" "}
         <div className="footer-privacy-wrapper">
-          <Link>@2024 Apinline. All Rights Reserved.</Link>
+          <li>
+            <Link>@2024 Apinline. All Rights Reserved.</Link>
+          </li>
 
           <div className="footer-privacy-box">
             <ul>
-              <Link>Privacy Policy</Link>
-              <Link>Terms & Conditions</Link>
-              <Link>Cookie Policy</Link>
+              <li>
+                <Link>Privacy Policy</Link>
+              </li>
+              <li>
+                <Link>Terms & Conditions</Link>
+              </li>
+              <li>
+                <Link>Cookie Policy</Link>
+              </li>
             </ul>
           </div>
         </div>

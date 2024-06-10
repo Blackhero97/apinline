@@ -36,34 +36,52 @@ function Navbar({ theme, setTheme }) {
           </div>
           <nav className={open ? "open-nav" : ""}>
             <ul onClick={() => setOpen(!open)}>
-              <NavLink to={"/"} className={""}>
-                Home
-              </NavLink>
-              <NavLink to={"/about"}>About Us</NavLink>
-              <NavLink to={"/service"}>Services</NavLink>
-              <NavLink to={"/portfolio"}>Portfolio</NavLink>
-              <NavLink to={"/blogs"}>Blogs</NavLink>
-              <NavLink to={"/contact"}>Contact Us</NavLink>{" "}
-              <a href="tel:+5138375128">
-                <button type="thrid" className="primary-btn">
-                  +1 513 837-5128
+              <li>
+                <NavLink to={"/"} className={""}>
+                  Home
+                </NavLink>
+              </li>
+              <li>
+                <NavLink to={"/about"}>About Us</NavLink>
+              </li>
+              <li>
+                <NavLink to={"/service"}>Services</NavLink>
+              </li>
+              <li>
+                <NavLink to={"/portfolio"}>Portfolio</NavLink>
+              </li>
+              <li>
+                <NavLink to={"/blogs"}>Blogs</NavLink>
+              </li>
+              <li>
+                <NavLink to={"/contact"}>Contact Us</NavLink>{" "}
+              </li>
+              <li>
+                <a href="tel:+5138375128">
+                  <button type="thrid" className="primary-btn">
+                    +1 513 837-5128
+                  </button>
+                </a>
+              </li>
+              <li>
+                <button
+                  onClick={() => {
+                    toggle_mode();
+                  }}
+                  className="mode-btn primary-btn"
+                >
+                  {theme == "light" ? (
+                    <i class="bx bxs-moon"></i>
+                  ) : (
+                    <i class="bx bxs-sun"></i>
+                  )}
                 </button>
-              </a>{" "}
-              <button
-                onClick={() => {
-                  toggle_mode();
-                }}
-                className="mode-btn primary-btn"
-              >
-                {theme == "light" ? (
-                  <i class="bx bxs-moon"></i>
-                ) : (
-                  <i class="bx bxs-sun"></i>
-                )}
-              </button>
-              <div onClick={() => setOpen(!open)} className="close">
-                <i class="bx bx-x-circle"></i>
-              </div>
+              </li>
+              <li>
+                <div onClick={() => setOpen(!open)} className="close">
+                  <i class="bx bx-x-circle"></i>
+                </div>
+              </li>
             </ul>
           </nav>
           <div onClick={() => setOpen(!open)} className="menu">
